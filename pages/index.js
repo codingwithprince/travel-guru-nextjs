@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import MainBody from '../components/MainBody/MainBody'
 
 export default function Home() {
   return (
@@ -12,15 +13,19 @@ export default function Home() {
 
       <main style={{
         backgroundImage: 'linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5)),url("/images/bg.png")',
-        backgroundSize: 'cover',
+        backgroundSize: 'fill',
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
-        height:'100vh',
-    
+        backgroundAttachment:'fixed',
+        paddingTop:'200px',
       }}>
-        
+
+      {/* =========== main body =========== */}
+  
+      <MainBody />
 
 
+       
      
       </main>
     </div>
